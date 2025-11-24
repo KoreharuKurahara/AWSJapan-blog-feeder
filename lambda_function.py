@@ -36,7 +36,6 @@ def is_within_last_24_hours(post):
     post_time = datetime(*post.published_parsed[:6], tzinfo=timezone.utc)
     time_difference = now - post_time
     is_recent = time_difference.total_seconds() < 24 * 60 * 60
-    # is_recent = time_difference.total_seconds() < 24 * 60 * 60 * 2
     
     jst_now = now.astimezone(timezone(timedelta(hours=9)))
     jst_post_time = post_time.astimezone(timezone(timedelta(hours=9)))
