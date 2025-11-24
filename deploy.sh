@@ -12,6 +12,7 @@ pip install -r requirements.txt -t package/
 # Lambda関数のコピー
 echo "Lambda関数のコピー..."
 cp lambda_function.py package/
+cp interaction_handler.py package/
 
 # パッケージの作成
 echo "デプロイパッケージの作成..."
