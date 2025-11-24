@@ -71,9 +71,6 @@ source .venv/bin/activate
   - 関数名: aws-news-feeder
   - ランタイム: Python 3.11
   - アーキテクチャ: x86_64
-  - 必須タグ:
-    - Project: kurahara
-    - Billing: kurahara
 
 3. Lambda環境変数の設定
    - Lambda > 関数 > aws-news-feeder > 設定 > 環境変数
